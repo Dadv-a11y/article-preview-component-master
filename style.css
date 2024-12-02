@@ -1,0 +1,129 @@
+:root{
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--LightGrayishBlue);
+    font-size: 16px;
+    padding: 10% 5% ;
+    color: var(--VeryDarkGrayishBlue);
+    font-family: 'manrope' sans-serif;
+}
+.drawers{
+    width: 100%;
+    border-top-right-radius:20px ;
+    border-top-left-radius:20px ;
+    margin-bottom: 5%;
+}
+h1,p{
+    padding: 2% 10%;
+}
+.container{
+    border-radius: 20px;
+    background-color:white;
+}
+.footer img{
+    border-radius: 100px;
+    width: 50px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 0;
+}
+.share img{
+    width: 15px;
+    border: var(--GrayishBlue) solid;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: var(--GrayishBlue);
+}
+button{
+    background-color: white;
+    border: none;
+}
+#share-link{
+    display: none; 
+    margin-top: 5%;
+}
+#share-link .footer {
+    background-color: var(--VeryDarkGrayishBlue);
+    color: var(--GrayishBlue);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius:15px ;
+}
+#share-link .footer button {
+    background-color: var(--VeryDarkGrayishBlue);
+}
+#share-link .footer img{
+    width: 25px;
+    border-radius: 0;
+}
+#share-link .footer .share img{
+    width: 15px;
+    border: var(--GrayishBlue) solid;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: var(--GrayishBlue);
+    margin-left: 50px;
+}
+@media screen and (min-width:1024px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }   
+  .container{
+    margin-top: 2em;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+  .drawers{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius:0px ;
+    border-bottom-left-radius:20px ;
+    border-top-left-radius:20px ;
+    margin-bottom: 0;
+}
+.share{
+    margin-left: 18em;
+    border: none;
+}
+#profile .footer{
+    justify-content: flex-start;
+    padding: 0 0 0 2em;
+    gap: 20px;
+}
+ #share-link{
+   height: 0em;
+   transform: scale(0.4);
+    position: relative;
+    bottom: 18%;
+    left: 40%;
+    margin: 0;
+ }
+
+ #share-link .share {
+    display: none;
+ }
+ #share-link .footer{
+    width: 90%;
+    font-size: 1.5em;
+    border-radius: 20px;
+ }
+ #share-link .footer img{
+    width: 50px;
+ }
+
+}

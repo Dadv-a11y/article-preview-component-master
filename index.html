@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Manrope">
+
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 10px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="container" role="main">
+   
+    <div><img src="images\drawers.jpg" alt="drawers" class="drawers"></div>
+    <div>
+     <h1>Shift the overall look and feel by adding these wonderful 
+       touches to furniture in your home
+     </h1>
+      <p>
+       Ever been in a room and felt like something was missing? Perhaps 
+       it felt slightly bare and uninviting. I’ve got some simple tips 
+       to help you make any room feel complete.
+     </p>
+     <div  id="share-link">
+
+      <div class="footer">
+        <div><p>SHARE</p></div>
+        <div><a href="https://web.facebook.com"><img src="images\icon-facebook.svg" alt="icon-facebook"></a></div>
+        <div><a href="https://x.com/home"><img src="images\icon-twitter.svg" alt="icon-twitter"></a></div>
+        <div><a href=""><img src="images\icon-pinterest.svg" alt="icon-pinterest"></a></div>
+         <div ><button class="share" onclick="change()" ><img  src="images\icon-share.svg" alt="images\icon-share.svg"></button></div>
+       </div>
+
+     </div>
+
+    <div id="profile">
+
+      <div class="footer" >
+        <div><img src="images\avatar-michelle.jpg" alt="avatar-michelle" class="icon"></div>
+        <div>Michelle Appleton <br> <span>28 Jun 2020</span> </div>
+        <div ><button class="share" onclick="change()"><img src="images\icon-share.svg" alt="images\icon-share.svg"></button></div>
+       </div>
+
+    </div>
+
+  </section>
+  <section class="attribution" role="link">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Dadv-a11y">DADV</a>.
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
